@@ -1,46 +1,254 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/*----------------------------------------------Header*/
 
-/*----------------------------------------------Heading*/
+.header {
+    font-family: "Montserrat", sans-serif;
+    background-color: #0094BC;
+}
 
-.main-heading {
+.list-inline-item a {
+    color: #fafafa;
+    font-weight: 500;
+}
+
+#nav li a {
+    font-size: xx-large;
+    padding: 8px;
+    line-height: 60px;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.logo h1 {
     font-family: "Cinzel", sans-serif;
+    font-weight: 600;
+    font-size: 275%;
+    color:#fafafa;
+    float: right;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+.logo-image {
+    background: url(..images/logo.png);
+}
+
+/*----------------------------------------------Main Heading*/
+
+.main-heading h1 {
+    font-family: "Cinzel", sans-serif;
+    font-weight: 600;
+    font-size: 400%;
     color: #fafafa;
     text-align: center;
-    padding-top: 75px;
+    margin-top: 100px;
 }
 
 /*----------------------------------------------About Me*/
 
 .bg-image {
-    background: url(../images/background-img1.jpg);
-    background-position: center;
+    background: url(../images/bgimage2.png);
     background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 100%;
-    padding: 0;
-    margin: 0;
+    margin-top: 11px;
+    z-index: -1;
 }
 
 .about-me-heading {
     font-family: "Cinzel", sans-serif;
+    font-style: oblique;
     color: #fafafa;
     text-align: center;
+    padding-top: 30px;
 }
 
 .about-me-text {
     font-family: "Montserrat", sans-serif;
+    font-size: 125%;
     color: #fafafa;
     text-align: center;
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-right: 40px;
+    margin-left: 40px;
 }
+
 
 .more-info-text {
     font-family: "Montserrat", sans-serif;
+    font-size: 125%;
     color: #fafafa;
     text-align: center;
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-right: 40px;
+    margin-left: 40px;
 }
 
 .more-info-text a {
     text-decoration: none;
+}
+
+.line-break {
+    background-color: #0094BC;
+    width: 400px;
+    height: 10px;
+    border-radius: 25px;
+    margin-top: 180px;
+}
+
+.news-heading {
+    color: #0094BC;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.news {
+    background-color: #0094BC;
+    color: #fafafa;
+    font-size: 150%;
+    text-align: center;
+    width: fit-content;
+    height: 115px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+}
+
+/*----------------------------------------------Testimonials*/
+
+.testimonials-hero-image img {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+.testimonial {
+    background-color: #0094BC;
+    color: #fafafa;
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    font-size: 150%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    display: block;
+}
+
+/*----------------------------------------------Contact*/
+
+.form-section {
+    background: url(../images/contact-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    clear: both;
+    color: #fafafa;
+}
+
+.form {
+    background-color: rgba(60, 60, 60, 0.6);
+}
+
+.contact-form {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+}
+
+.contact-form h4 {
+    padding-top: 20px;
+    font-size: 125%;
+}
+
+.text-input {
+    display: block;
+    width: 400px;
+    
+}
+
+#message {
+    display: block;
+    max-width: 400px;
+}
+
+#experience {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.btn {
+    margin-left: 5px;
+    background-color:#0094BC;
+    border-color: #007594;
+}
+
+.btn:hover {
+    background-color: #007594;
+    border-color: #0094BC;
+}
+
+/*----------------------------------------------Footer*/
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.footer {
+    font-size: 125%;
+    color: #0094BC;
+    margin-top: 20px;
+}
+
+.list-inline-item a i {
+    color: #0094BC;
+    font-size: 300%;
+    letter-spacing: 20px;
+}
+
+.list-inline-item a i:hover {
+    color: #007594;
+    transition: all 0.2s ease-in-out;
+     -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.email-address {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.email-address a {
+    color: #0094BC;
+}
+
+.email-address a i {
+    font-size: 150%;
+}
+
+.email-address a i:hover {
+    color: #007594;
+    transition: all 0.2s ease-in-out;
+     -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
 }
