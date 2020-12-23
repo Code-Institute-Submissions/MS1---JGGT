@@ -4,81 +4,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/c3f0c2a2e6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Jack Gibson Guitar Tuition</title>
 </head>
 <body>
     <header>
-        <div class="row">
-            <div class="col-12 header">
-                <div class="logo">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="logo">
                     <a href="index.html"><h1>JGGT </h1></a><a href="index.html"></a>
                 </div>
-                <ul id="nav" class="list-inline">
-                    <li class="list-inline-item active"><a href="index.html">Home</a></li>
-                    <li class="list-inline-item"><a href="media.html">Media</a></li>
-                    <li class="list-inline-item"><a href="testimonials.html">Testimonials</a></li>
-                    <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#media">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
                 </ul>
+                <span class="navbar-text">
+
+                </span>
             </div>
-        </div>
+        </nav>
     </header>
     <section>
         <div class="bg-image"></div>
-            <div class="row">
-                <div class="col-12 main-heading">
-                    <h1>Jack Gibson Guitar Tuition</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 about-me-heading">
-                    <h2>About Me</h2>
-                </div>
-            </div>
-            <div class="row about-me">
-                <div class="col">
-                    <p class="about-me-text">My obsession with Music began from a young age, 
-                    I started playing guitar at age 8 and went on to study Music 
-                    at the highest level at The Institute of Contempory Music Performance in London.
-                    After my time there I went on to perform across the UK and abroad on
-                    various gigs, tours and festivals. With all this experience I'm able 
-                    to teach any level of guitar, whether you might be a complete beginner, 
-                    a seasoned shred head or somewhere inbetween!</p>
-                    <p class="more-info-text"> If you're interested in taking your guitar playing
-                    to the next level and for more information about availability and pricing then head to the <span class="contact-link"><a href="contact.html">Contact</a></span> page!</p>
-                </div>
-            </div>
-        
-        <hr class="line-break">
-    </section>
-    <section>
+        <div class="overlay"></div>
         <div class="row">
-            <div class="col">
-                <div>
-                    <h1 class="news-heading">Latest News</h1>
-                </div>
-                <div class="news">
-                    I'm currently taking suggestions for my next Instagram Live Jam coming up next week, 
-                    let me know on any of my socials what songs you want to hear and who I should bring on!
-                    I'll also be running an introductory offer for any new students until January 1st, 
-                    block book 5 lessons and get the 6th free!
+            <div class="col-12 main-heading">
+                <h1>Jack Gibson Guitar Tuition</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 about-me-heading">
+                <h2>About Me</h2>
+            </div>
+        </div>
+        <div class="row about-me">
+            <div class="col md-6">
+                <p class="about-me-text">My obsession with Music began from a young age, 
+                I started playing guitar at age 8 and went on to study Music 
+                at the highest level at The Institute of Contempory Music Performance in London.
+                After my time there I went on to perform across the UK and abroad on
+                various gigs, tours and festivals. With all this experience I'm able 
+                to teach any level of guitar, whether you might be a complete beginner, 
+                a seasoned shred head or somewhere inbetween!</p>
+                <p class="more-info-text"> If you're interested in taking your guitar playing
+                to the next level and for more information about availability and pricing then head to the <span class="contact-link"><a href="contact.html">Contact page!</a></span></p>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row steps">
+            <div class="col-sm-4 goals"><i class="fas fa-clipboard-list"></i><h3>Establish Goals</h3>
+                <div class="goals-text">
+                    What do you want to achieve? Set your sights on what you want to get out 
+                    of your tuition. It might be something as simple as learning a specific 
+                    song or solo, it might be taking your RockSchool exams or applying for a
+                    music college.
                 </div>
             </div>
+            <div class="col-sm-4 track-progress"><i class="fas fa-chart-line"></i><h3>Track Progress</h3>
+                <div class="progress-text">
+                    I have always found that by tracking students progress, they have a clear
+                    way of seeing and measuring where they started and how far they've come. 
+                    This is really important especially when students might start to lose focus
+                    in why they're studying. By seeing their past progress it can help bolster them 
+                    when they hit a steep learning curve and realise that they can push through.
+                </div>
+            </div>
+            <div class="col-sm-4 results"><i class="fas fa-trophy"></i><h3>Results!</h3>
+                <div class="results-text">
+                    Last but not least, it's crucially important to quantify results to give students a sense 
+                    of accomplishment. The feeling when you get finally "get" it, when all the little pieces of 
+                    that puzzle finally click into place is hugely rewarding.
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row media">
+            <h2 class="col-12 media-heading" id="media">Media</h2>
+        </div>
+        <div class="media">    
+            <div class="info-1">This first track is from my band When Our Time Comes' debut self titled album. It's more of a rhythmically 
+                challenging song, particularly the bridge section. The bridge starts off with a clean guitar part arpeggiating the 
+                chorus chords before kicking into a heavy alternate picked 16th note riff that bounces back and forth between 4/4 
+                and 3/4 time every bar. At a tempo of 148bpm it can be a very fatiguing passage for the right hand to play and 
+                required a lot of metronome practice to get it sounding tight!
+            </div>
+            <div class="video-1"><iframe id="video-1" src="https://www.youtube.com/embed/TeC14LsnuX4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+        <div class="media">
+            <div class="info-2">This track is another When Our Time Comes song, this time from our debut EP. This again comes with 
+                some more rhythmically challenging aspects with most of the song being in 7/8 time as well as some big chord shapes 
+                in the chorus. The solo features some advanced techniques such as two handed tapping and some fast legato runs over 
+                more odd time signatures.
+            </div>
+            <div class="video-2"><iframe id="video-2" src="https://www.youtube.com/embed/--HZvoBGUsw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+    </section>
+    <section class="container-fluid">
+        <div class="row testimonials">
+            <h2 class="col-12 testimonials-heading" id="testimonials">Testimonials</h2>
+        </div>
+        <div class="col-sm-4">
+            <div class="testimonials-img-1"></div>
+            <div class="testimonials-text-1"> 
+                    I was recommended to Jack by a friend of mine who previously had lessons from him, 
+                    I had been playing guitar for a few years but was stuck in a rut and wanted to widen my skill set. 
+                    After a chat we identified what things I wanted to learn and how I was going to get there. Now 5 months later 
+                    and I'm an infinitely better guitarist and free of all my old bad playing habits which at one point I didn't 
+                    think was possible! I would highly recommend anyone looking to become a better player to take up lessons with 
+                    Jack, you won't regret it! <span> - Dan S.</span>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="testimonials-img-2"></div>
+            <div class="testimonials-text-2"> 
+                    Before having lessons with Jack I had never played guitar at all, I had seen his 
+                    advertisement on Facebook and decided to take on my new challenge with an experienced guitar tutor. Jacks approach 
+                    to beginner guitarists is fantastic, he has a great amount of patience and understanding as he always tells me, 
+                    "Even Joe Satriani was a beginner once!". Now 3 years on and I'm able to play songs I could only dream of playing 
+                    before, this is only due to the sense of dedication and hard work (read: lots of practice) instilled in me by Jack. 
+                    If you're shopping around for your first/new guitar tutor, look no further! <span> - Alex B.</span>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="testimonials-img-3"></div>
+            <div class="testimonials-text-3"> 
+                    I've been playing guitar for a number of years now and I've been having lessons with 
+                    Jack for just over a year. I had always been more of a rhythm player and wanted to learn some solo/lead techniques. 
+                    Throughout all of the tuition, Jacks' attention to detail really stood out to me. He was conscious of every nuance of 
+                    the techniques and solos that he was teaching me and made sure I was aware of the importance of really <em>playing</em>
+                    the song and making sure those subtleties came out. On top of this he always made sure that learning was a fun and musical
+                    experience and not just running scales constantly. Whatever you're looking to learn, Jack will certainly be able to help 
+                    you on your musical journey. <span> - Chris T.</span>
+            </div>
+        </div>
+    </section>
+    <section class="form-section">
+        <div class="row form">
+        <div class="col-4"></div>
+            <form class="contact-form">
+                <h3>Start your new musical journey today!</h3>
+                <label for="fname">First Name</label>
+                <input class="text-input" type="text" name="first-name" id="first-name" required/>
+                <label for="lname">Last Name</label>
+                <input class="text-input" type="text"  name="last-name" id="last-name" required/>
+                <label for="email">Email Address</label>
+                <input class="text-input" type="email" name="email-address" id="email" required/>
+                <h4>Playing Experience</h4>
+                <label for="experience">Beginner</label>
+                <input class="experience-1" type="radio" name="experience" id="experience" required/>
+                <label for="experience">Intermediate</label>
+                <input class="experience-2" type="radio" name="experience" id="experience" required/>
+                <label for="experience">Advanced</label>
+                <input class="experience-3" type="radio" name="experience" id="experience" required/>
+                <label class="message" for="message">Add a message</label>
+                <textarea name="message" id="message" cols="60" rows="6"></textarea>
+                <button class="btn btn-primary btn-lg text-center" type="submit">Send</button>
+            </form>
         </div>
     </section>
     <footer class="footer container-fluid">
         <div class="row">
-            <div class="col-sm-4">
-                <div>
-                    © 2020 Jack Gibson Guitar Tuition
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div>
-                    <p class="email-address"><a href="https://www.gmail.com" target="_blank"><i class="fas fa-envelope"></i></a> : j_gibson6@hotmail.com</p>
-                </div>
-            </div>
+            <div class="col-sm-4"></div>
             <div class="col-sm-4">
                 <div>
                     <ul class="list-inline social-links">
@@ -88,6 +193,9 @@
                         <li class="list-inline-item"><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
                         <li class="list-inline-item"><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
                     </ul>
+                </div>
+                <div class="copyright">
+                    © 2020 Jack Gibson Guitar Tuition
                 </div>
             </div>
         </div>

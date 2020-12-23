@@ -4,25 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/c3f0c2a2e6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Jack Gibson Guitar Tuition</title>
 </head>
 <body>
     <header>
-        <div class="row">
-            <div class="col-12 header">
-                <div class="logo">
-                    <a href="index.html"><h1>JGGT </h1></a><a href="index.html" class="logo-image"></a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="logo">
+                    <a href="index.html"><h1>JGGT </h1></a><a href="index.html"></a>
                 </div>
-                <ul id="nav" class="list-inline">
-                    <li class="list-inline-item"><a href="index.html">Home</a></li>
-                    <li class="list-inline-item"><a href="media.html">Media</a></li>
-                    <li class="list-inline-item active"><a href="testimonials.html">Testimonials</a></li>
-                    <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="media.html">Media</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="testimonials.html">Testimonials <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
                 </ul>
+                <span class="navbar-text">
+
+                </span>
             </div>
-        </div>
+        </nav>
     </header>
     <section class="container container-fluid">
         <div class="row">
@@ -55,17 +72,11 @@
     </section>
     <footer class="footer container-fluid">
         <div class="row">
-            <div class="col-sm-4">
-                <div>
-                    © 2020 Jack Gibson Guitar Tuition
-                </div>
-            </div>
+            <div class="col-sm-4"></div>
             <div class="col-sm-4">
                 <div>
                     <p class="email-address"><a href="https://www.gmail.com" target="_blank"><i class="fas fa-envelope"></i></a> : j_gibson6@hotmail.com</p>
                 </div>
-            </div>
-            <div class="col-sm-4">
                 <div>
                     <ul class="list-inline social-links">
                         <li class="list-inline-item"><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
@@ -74,6 +85,9 @@
                         <li class="list-inline-item"><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
                         <li class="list-inline-item"><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
                     </ul>
+                </div>
+                <div class="copyright">
+                    © 2020 Jack Gibson Guitar Tuition
                 </div>
             </div>
         </div>

@@ -1,70 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html, body { overflow-x: hidden; }
+
+/*----------------------------------------------Fonts*/
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Cinzel", sans-serif;
+}
 
 /*----------------------------------------------Header*/
 
-.header {
-    font-family: "Montserrat", sans-serif;
-    background-color: #0094BC;
+.navbar {
+    text-decoration: none;
+    margin-bottom: 0;
+    border-radius: 0px;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
 }
 
-.list-inline-item a {
-    color: #fafafa;
+.navbar-dark .navbar-nav .nav-link {
+    color: #02AAB0;
+}
+.navbar-dark .navbar-nav .active>.nav-link {
+    color: #00CDAC;
+}
+
+.nav-link {
+    font-size: 110%;
     font-weight: 500;
 }
 
-#nav li a {
-    font-size: xx-large;
-    padding: 8px;
-    line-height: 60px;
-}
-
-.active {
-    text-decoration: underline;
-}
-
 .logo h1 {
-    font-family: "Cinzel", sans-serif;
     font-weight: 600;
-    font-size: 275%;
+    font-size: 150%;
     color:#fafafa;
-    float: right;
-    padding-right: 15px;
-    padding-top: 10px;
-}
-
-.logo-image {
-    background: url(..images/logo.png);
+    margin-right: 10px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    float: left;
 }
 
 /*----------------------------------------------Main Heading*/
 
 .main-heading h1 {
-    font-family: "Cinzel", sans-serif;
     font-weight: 600;
     font-size: 400%;
     color: #fafafa;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 /*----------------------------------------------About Me*/
 
 .bg-image {
-    background: url(../images/bgimage2.png);
+    background: url(../images/gibson.jpg);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
+    display: block;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 95vh;
     width: 100%;
     margin-top: 11px;
     z-index: -1;
 }
 
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 96.55%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 0;
+}
+
 .about-me-heading {
-    font-family: "Cinzel", sans-serif;
     font-style: oblique;
     color: #fafafa;
     text-align: center;
@@ -72,7 +91,6 @@
 }
 
 .about-me-text {
-    font-family: "Montserrat", sans-serif;
     font-size: 125%;
     color: #fafafa;
     text-align: center;
@@ -85,7 +103,6 @@
 
 
 .more-info-text {
-    font-family: "Montserrat", sans-serif;
     font-size: 125%;
     color: #fafafa;
     text-align: center;
@@ -97,72 +114,147 @@
 }
 
 .more-info-text a {
+    color: #02AAB0;
     text-decoration: none;
 }
 
-.line-break {
-    background-color: #0094BC;
-    width: 400px;
-    height: 10px;
-    border-radius: 25px;
-    margin-top: 180px;
+.more-info-text a:hover {
+    color: #00CDAC;
 }
 
-.news-heading {
-    color: #0094BC;
+/*----------------------------------------------Steps*/
+
+.steps {
+     text-align: center;
+     margin-top: 40px;
+}
+
+.steps i {
+    font-size: 250%;
+    color: #00CDAC;
+}
+
+.goals, .track-progress, .results {
+    margin-top: 250px;
+}
+
+.goals-text, .progress-text, .results-text {
+    font-weight: 500;
+    font-size: 110%;
+}
+
+/*----------------------------------------------Media*/
+
+.media {
+    display: block;
+    font-weight: 500;
+    font-size: 110%;
+    color: #343a40;
+}
+
+.media-heading {
     text-align: center;
-    font-weight: 700;
-    margin-bottom: 25px;
+    font-size: 300%;
+    font-weight: 600;
+    margin-top: 100px;
+    margin-bottom: 10px;
 }
 
-.news {
-    background-color: #0094BC;
+.info-1, .info-2 {
+    background: linear-gradient(to right, #00CDAC, #02AAB0);
+    margin: 30px;
+    padding: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    display: inline-block;
     color: #fafafa;
-    font-size: 150%;
-    text-align: center;
-    width: fit-content;
-    height: 115px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 40px;
-    border-radius: 15px;
+}
+
+#video-1, #video-2 {
+    width: 560px;
+    height: 315px;
+}
+
+iframe {
+   display: block;
+   margin: 0 auto;
 }
 
 /*----------------------------------------------Testimonials*/
 
-.testimonials-hero-image img {
-    position: relative;
-    width: 100%;
-    display: inline-block;
+.testimonials-heading {
+    text-align: center;
+    font-size: 300%;
+    font-weight: 600;
+    margin-top: 100px;
+    margin-bottom: 60px;
 }
 
-.testimonial {
-    background-color: #0094BC;
-    color: #fafafa;
-    margin: 0 auto;
-    width: 70%;
+
+.testimonials-text-1, .testimonials-text-2, .testimonials-text-3{
+    display: inline-block;
     text-align: center;
-    font-size: 150%;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    border-radius: 15px;
-    display: block;
+    margin: 0;
+}
+
+.testimonials-text-1 span, .testimonials-text-2 span, .testimonials-text-3 span {
+    font-family: "Cinzel", sans-serif;
+    font-size: 120%;
+}
+
+.testimonials-img-1, .testimonials-img-2, .testimonials-img-3 {
+    height: 400px;
+    width: 400px;
+    padding: 0;
+    margin: 0;
+    margin-left: 60px;
+    overflow: hidden;
+}
+
+.testimonials-img-1 {
+    background: url(../images/testimonial-1.jpg);
+    background-repeat: no-repeat;
+}
+
+.testimonials-img-2 {
+    background: url(../images/testimonial-2.png);
+    background-repeat: no-repeat;
+}
+
+.testimonials-img-3 {
+    background: url(../images/testimonial-3.png);
+    background-repeat: no-repeat;
+}
+/*----------------------------------------------News*/
+
+.news-heading, .news {
+    text-align: center;
+}
+
+.news-heading {
+    margin-top: 60px;
 }
 
 /*----------------------------------------------Contact*/
 
 .form-section {
-    background: url(../images/contact-hero.jpg);
+    background: url(../images/gibson2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    height: 600px;
+    top: 0;
+    left: 0;
     background-position: center;
     clear: both;
     color: #fafafa;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .form {
-    background-color: rgba(60, 60, 60, 0.6);
+    background-color: rgba(60, 60, 60, 0.8);
+    height: 600px;
 }
 
 .contact-form {
@@ -172,19 +264,26 @@
 }
 
 .contact-form h4 {
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 125%;
 }
 
 .text-input {
     display: block;
     width: 400px;
+    margin-bottom: 5px;
     
+}
+
+.message {
+    display: block;
+    margin-top: 10px;
 }
 
 #message {
     display: block;
     max-width: 400px;
+    color: black;
 }
 
 #experience {
@@ -193,15 +292,16 @@
 }
 
 .btn {
-    margin-left: 5px;
-    background-color:#0094BC;
-    border-color: #007594;
+    margin-top: 10px;
+    background-color: #00CDAC;
+    border-color: #02AAB0;
 }
 
 .btn:hover {
-    background-color: #007594;
-    border-color: #0094BC;
+    background-color: #02AAB0;
+    border-color: #00CDAC;
 }
+
 
 /*----------------------------------------------Footer*/
 
@@ -213,19 +313,26 @@
 
 
 .footer {
+    display: block;
     font-size: 125%;
-    color: #0094BC;
-    margin-top: 20px;
+    color: #343a40;
+    text-align: center;
+    position: relative;
+}
+
+.copyright {
+    font-size: 70%;
+    padding-bottom: 10px;
 }
 
 .list-inline-item a i {
-    color: #0094BC;
-    font-size: 300%;
+    color: #343a40;
+    font-size: 150%;
     letter-spacing: 20px;
 }
 
 .list-inline-item a i:hover {
-    color: #007594;
+    color: #00CDAC;
     transition: all 0.2s ease-in-out;
      -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
@@ -233,22 +340,88 @@
 }
 
 .email-address {
-    text-align: center;
     margin-right: 20px;
 }
 
 .email-address a {
-    color: #0094BC;
+    color: #343a40;
 }
 
 .email-address a i {
-    font-size: 150%;
+    font-size: 120%;
 }
 
 .email-address a i:hover {
-    color: #007594;
+    color: #00CDAC;
     transition: all 0.2s ease-in-out;
      -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
+}
+
+/*----------------------------------------------Media Queries*/
+
+@media screen and (max-width:500px) 
+{   
+    .main-heading {
+        margin-top: 20px;
+    }
+
+    .about-me-text {
+        padding:0;
+        margin-top: 10px;
+    }
+
+    .more-info-text {
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .bg-image {
+        height: 190%;
+    }
+
+    .overlay {
+        height: 183%;
+    }
+
+    .steps {
+        margin-top: 100px;
+    }
+
+    .goals, .track-progress, .results {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .track-progress, .results {
+        margin-top: 50px;
+    }
+
+
+
+    .media {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .media-heading {
+        margin-top: 150px;
+    }
+
+    .info-2 {
+        margin-top: 15px;
+    }
+
+    .text-input, #message {
+        width: 80%;
+    }
+
+    .testimonials-img-1, .testimonials-img-2, .testimonials-img-3 {
+        margin-left: 20px;
+    }
+    
+    .testimonials-img-2, .testimonials-img-3 {
+        margin-top: 40px;
+    }
 }
