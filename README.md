@@ -1,7 +1,7 @@
 # Jack Gibson Guitar Tuition
 First Milestone Project for Code Institute
 
- ![](/workspace/CI-MS1/assets/images/devices.png)
+ ![](assets/images/devices.png)
 
 I wanted to design a website aimed at people interested in or currently learning how to play the guitar. 
 With online lessons being the only viable way to teach guitar in the current climate I thought this would be a good
@@ -44,7 +44,7 @@ home button to almost give a gradient effect. I chose #fafafa for my main text c
 as well the icons also using #00CDAC as a hover effect colour for the social media icons in the 
 footer.
 
-![](/workspace/CI-MS1/assets/images/Colours.png)
+![](assets/images/Colours.png)
 
 # Features
 - Fixed navbar making navigation intuitive and simple
@@ -102,6 +102,15 @@ These were the steps taken to successfully deploy the website.
 - Click the **Source** dropdown menu and select **Master Branch**
 - After the page has refreshed the link to the website can now be found 
 under the **GitHub pages** section
+
+## Cloning the Website
+- Open [**GitHub**](https://github.com/) and log in
+- Select the **repository**
+- Click the **Code** drop down button next to the green GitPod one
+- Select **"Clone with HTTPS"** and copy the link
+- Open your **IDE** and the **Terminal**
+- Specify a new **path directory** where you want to put the clone
+- Type `git clone` and then **paste** the previously copied url from before
 
 # Credits
 
