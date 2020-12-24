@@ -126,16 +126,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .steps {
      text-align: center;
-     margin-top: 40px;
 }
 
 .steps i {
     font-size: 250%;
-    color: #00CDAC;
+    color: #343a40;
 }
 
 .goals, .track-progress, .results {
-    margin-top: 250px;
+    margin-top: 200px;
 }
 
 .goals-text, .progress-text, .results-text {
@@ -145,32 +144,32 @@ h1, h2, h3, h4, h5, h6 {
 
 /*----------------------------------------------Media*/
 
-.media {
-    display: block;
-    font-weight: 500;
-    font-size: 110%;
-    color: #343a40;
-}
-
 .media-heading {
     text-align: center;
     font-size: 300%;
     font-weight: 600;
     margin-top: 100px;
     margin-bottom: 10px;
+    color: #343a40;
 }
 
-.info-1, .info-2 {
-    background: linear-gradient(to right, #00CDAC, #02AAB0);
-    margin: 30px;
-    padding: 20px;
-    margin-bottom: 50px;
+.card {
+    font-size: 110%;
+    font-weight: 500;
+    background-color: #343a40;
+    margin-top: 60px;
+    margin-bottom: 30px;
     text-align: center;
-    display: inline-block;
     color: #fafafa;
 }
 
+.info-1, .info-2 {
+    margin: 30px;
+    padding: 20px;
+}
+
 #video-1, #video-2 {
+    margin-top: 60px;
     width: 560px;
     height: 315px;
 }
@@ -178,6 +177,7 @@ h1, h2, h3, h4, h5, h6 {
 iframe {
    display: block;
    margin: 0 auto;
+   border: 0;
 }
 
 /*----------------------------------------------Testimonials*/
@@ -195,11 +195,12 @@ iframe {
     display: inline-block;
     text-align: center;
     margin: 0;
+    font-size: 110%;
 }
 
 .testimonials-text-1 span, .testimonials-text-2 span, .testimonials-text-3 span {
     font-family: "Cinzel", sans-serif;
-    font-size: 120%;
+    font-size: 130%;
 }
 
 .testimonials-img-1, .testimonials-img-2, .testimonials-img-3 {
@@ -272,6 +273,7 @@ iframe {
     display: block;
     width: 400px;
     margin-bottom: 5px;
+    color: #343a40;
     
 }
 
@@ -283,23 +285,23 @@ iframe {
 #message {
     display: block;
     max-width: 400px;
-    color: black;
+    color: #343a40;
 }
 
-#experience {
+#experience-1, #experience-2, #experience-3 {
     margin-left: 5px;
     margin-right: 5px;
 }
 
 .btn {
     margin-top: 10px;
-    background-color: #00CDAC;
-    border-color: #02AAB0;
+    background-color: #343a40;
+    border-color: #00CDAC;
 }
 
 .btn:hover {
-    background-color: #02AAB0;
-    border-color: #00CDAC;
+    background-color: #00CDAC;
+    border-color: #343a40;
 }
 
 
@@ -361,32 +363,36 @@ iframe {
 
 /*----------------------------------------------Media Queries*/
 
-@media screen and (max-width:500px) 
-{   
-    .main-heading {
-        margin-top: 20px;
-    }
-
-    .about-me-text {
-        padding:0;
-        margin-top: 10px;
-    }
-
+@media screen and (max-width:500px) {   
+    
     .more-info-text {
         padding: 0;
-        margin-top: 10px;
+        margin-top: 20px;
+    }
+    
+    .bg-image {
+        z-index: 0;
     }
 
-    .bg-image {
-        height: 190%;
+    .landing-page {
+        background-color: #000;
+        padding-bottom: 40px;
+        z-index: -4;
+    }
+
+    .mobile-overlay {
+        background-color: rgba(0,0,0,0.8);
+        z-index: -1;
     }
 
     .overlay {
-        height: 183%;
-    }
+        height: 228%;
+        background-color: rgba(0,0,0,0.8);
+        z-index: 0;
+    } 
 
-    .steps {
-        margin-top: 100px;
+    .goals {
+        margin-top: 120px;
     }
 
     .goals, .track-progress, .results {
@@ -398,13 +404,6 @@ iframe {
         margin-top: 50px;
     }
 
-
-
-    .media {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
     .media-heading {
         margin-top: 150px;
     }
@@ -413,8 +412,8 @@ iframe {
         margin-top: 15px;
     }
 
-    .text-input, #message {
-        width: 80%;
+    #video-1, #video-2 {
+        width: fit-content;
     }
 
     .testimonials-img-1, .testimonials-img-2, .testimonials-img-3 {
@@ -423,5 +422,9 @@ iframe {
     
     .testimonials-img-2, .testimonials-img-3 {
         margin-top: 40px;
+    }
+
+    .text-input, #message {
+        width: 80%;
     }
 }

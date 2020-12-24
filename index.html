@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark bg-dark">
             <div class="logo">
                     <a href="index.html"><h1>JGGT </h1></a><a href="index.html"></a>
                 </div>
@@ -32,7 +32,7 @@
                         <a class="nav-link" href="#testimonials">Testimonials</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
                 <span class="navbar-text">
@@ -41,9 +41,9 @@
             </div>
         </nav>
     </header>
-    <section>
+    <section class="landing-page">
         <div class="bg-image"></div>
-        <div class="overlay"></div>
+        <div class="overlay mobile-overlay"></div>
         <div class="row">
             <div class="col-12 main-heading">
                 <h1>Jack Gibson Guitar Tuition</h1>
@@ -64,7 +64,11 @@
                 to teach any level of guitar, whether you might be a complete beginner, 
                 a seasoned shred head or somewhere inbetween!</p>
                 <p class="more-info-text"> If you're interested in taking your guitar playing
-                to the next level and for more information about availability and pricing then head to the <span class="contact-link"><a href="contact.html">Contact page!</a></span></p>
+                to the next level and for more information about availability and pricing then head
+                 to the <span class="contact-link"><a href="#contact">Contact page</a></span> 
+                 and send me a message!</p>
+                <p class="more-info-text">Due to the current COVID-19 pandemic 
+                only online lessons are available.</p>
             </div>
         </div>
     </section>
@@ -97,30 +101,32 @@
         </div>
     </section>
     <section class="container">
-        <div class="row media">
-            <h2 class="col-12 media-heading" id="media">Media</h2>
+        <div class="row" id="media">
+            <h2 class="col-12 media-heading">Media</h2>
         </div>
-        <div class="media">    
-            <div class="info-1">This first track is from my band When Our Time Comes' debut self titled album. It's more of a rhythmically 
+        <div class="card">
+            <div class="video-1 card-img-top"><iframe id="video-1" src="https://www.youtube.com/embed/TeC14LsnuX4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="card-body">
+                <p class="info-1">This first track is from my band When Our Time Comes' debut self titled album. It's more of a rhythmically 
                 challenging song, particularly the bridge section. The bridge starts off with a clean guitar part arpeggiating the 
                 chorus chords before kicking into a heavy alternate picked 16th note riff that bounces back and forth between 4/4 
                 and 3/4 time every bar. At a tempo of 148bpm it can be a very fatiguing passage for the right hand to play and 
-                required a lot of metronome practice to get it sounding tight!
+                required a lot of metronome practice to get it sounding tight!</p>
             </div>
-            <div class="video-1"><iframe id="video-1" src="https://www.youtube.com/embed/TeC14LsnuX4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         </div>
-        <div class="media">
-            <div class="info-2">This track is another When Our Time Comes song, this time from our debut EP. This again comes with 
+        <div class="card">
+            <div class="video-2 card-img-top"><iframe id="video-2" src="https://www.youtube.com/embed/--HZvoBGUsw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="card-body">
+                <p class="info-2">This track is another When Our Time Comes song, this time from our debut EP. This again comes with 
                 some more rhythmically challenging aspects with most of the song being in 7/8 time as well as some big chord shapes 
                 in the chorus. The solo features some advanced techniques such as two handed tapping and some fast legato runs over 
-                more odd time signatures.
+                more odd time signatures.</p>
             </div>
-            <div class="video-2"><iframe id="video-2" src="https://www.youtube.com/embed/--HZvoBGUsw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         </div>
     </section>
     <section class="container-fluid">
-        <div class="row testimonials">
-            <h2 class="col-12 testimonials-heading" id="testimonials">Testimonials</h2>
+        <div class="row testimonials" id="testimonials">
+            <h2 class="col-12 testimonials-heading">Testimonials</h2>
         </div>
         <div class="col-sm-4">
             <div class="testimonials-img-1"></div>
@@ -158,23 +164,23 @@
         </div>
     </section>
     <section class="form-section">
-        <div class="row form">
+        <div class="row form" id="contact">
         <div class="col-4"></div>
             <form class="contact-form">
                 <h3>Start your new musical journey today!</h3>
-                <label for="fname">First Name</label>
+                <label for="first-name">First Name</label>
                 <input class="text-input" type="text" name="first-name" id="first-name" required/>
-                <label for="lname">Last Name</label>
+                <label for="last-name">Last Name</label>
                 <input class="text-input" type="text"  name="last-name" id="last-name" required/>
                 <label for="email">Email Address</label>
                 <input class="text-input" type="email" name="email-address" id="email" required/>
                 <h4>Playing Experience</h4>
-                <label for="experience">Beginner</label>
-                <input class="experience-1" type="radio" name="experience" id="experience" required/>
-                <label for="experience">Intermediate</label>
-                <input class="experience-2" type="radio" name="experience" id="experience" required/>
-                <label for="experience">Advanced</label>
-                <input class="experience-3" type="radio" name="experience" id="experience" required/>
+                <label for="experience-1">Beginner</label>
+                <input class="experience-1" type="radio" name="experience" id="experience-1" required/>
+                <label for="experience-2">Intermediate</label>
+                <input class="experience-2" type="radio" name="experience" id="experience-2" required/>
+                <label for="experience-3">Advanced</label>
+                <input class="experience-3" type="radio" name="experience" id="experience-3" required/>
                 <label class="message" for="message">Add a message</label>
                 <textarea name="message" id="message" cols="60" rows="6"></textarea>
                 <button class="btn btn-primary btn-lg text-center" type="submit">Send</button>
