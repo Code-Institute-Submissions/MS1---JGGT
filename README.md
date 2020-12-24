@@ -99,7 +99,7 @@ These were the steps taken to successfully deploy the website.
 - Select the **repository**
 - Click the **Settings** button from the top menu
 - Scroll down to the **GitHub pages** section
-- Click the **Source** dropdown menu and select **Master Branch**
+- Click the **Source** dropdown menu and select **Main Branch**
 - After the page has refreshed the link to the website can now be found 
 under the **GitHub pages** section
 
