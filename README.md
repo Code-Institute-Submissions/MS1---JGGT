@@ -59,10 +59,10 @@ footer.
 
 # Technologies used
 ## Languages used
-- [HTML](https://en.wikipedia.org/wiki/HTML)
-- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [HTML5](https://en.wikipedia.org/wiki/HTML)
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
 
-## Tools and Libraries used
+## Tools, Frameworks and Libraries used
 - [Git](https://git-scm.com/)
 - [Font Awesome](https://fontawesome.com/)
 - [Bootstrap](https://getbootstrap.com/)
@@ -90,4 +90,38 @@ relevant fixes.
     
 - Navbar expanding on medium size devices such as iPads
     - Added the Bootstrap class "navbar-expand-md" 
-    
+
+# Deployment
+
+**JGGT** was developed on Gitpod, using GitHub to host the repository.
+These were the steps taken to successfully deploy the website.
+- Open [**GitHub**](https://github.com/) and log in
+- Select the **repository**
+- Click the **Settings** button from the top menu
+- Scroll down to the **GitHub pages** section
+- Click the **Source** dropdown menu and select **Master Branch**
+- After the page has refreshed the link to the website can now be found 
+under the **GitHub pages** section
+
+# Credits
+
+## Code
+- I used [Bootstrap 4](https://getbootstrap.com/) to make the site
+responsive on different devices.
+ 
+## Images
+- The main background image and contact form background image came from
+[WallpaperAccess](https://wallpaperaccess.com/les-paul), they are the 3rd and 5th image down from the top.
+- The three testimonal images came from [Unsplash](https://unsplash.com/) 
+and can be found [here](https://unsplash.com/photos/rxwumN1CEGs), [here](https://unsplash.com/photos/Pc0ToyoR5Xo) and [here.](https://unsplash.com/photos/d2MSDujJl2g)
+
+## Videos 
+- All videos were from my bands YouTube page.
+
+## Websites
+
+- I also used [ResizeImage](https://resizeimage.net/) to help get the testimonal images
+to display properly.
+
+# Special Thanks
+Special thanks to the Slack community and my Mentor for all their advice and guidance on this project.
