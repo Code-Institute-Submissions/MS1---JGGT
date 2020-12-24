@@ -428,9 +428,3 @@ iframe {
         width: 80%;
     }
 }
-
-@media screen and (max-width:800px) {
-    .testimonials-img-1, .testimonials-img-2, .testimonials-img-3 {
-        margin-left: 0;
-    }
-}
